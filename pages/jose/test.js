@@ -20,6 +20,7 @@ const Test = ({joseph}) => {
             {joseph.map(joseph =>(
                 <Link href={'/jose/' +joseph.id} key={joseph.id}>
                     <h3 className={style.single}>{joseph.name}</h3>
+                    <h3>{joseph.email}</h3>
                 </Link>
             ))}
         </div>

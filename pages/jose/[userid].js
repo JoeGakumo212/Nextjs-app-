@@ -5,7 +5,7 @@ export const getStaticPaths = async ()=>{
 
     const paths=data.map(joseph => {
         return{
-            params:{id: joseph.id.toString()}
+            params:{userid: joseph.id.toString()}
         }
     })
     return{
